@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-Minute Routine | YogaLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">YogaLife.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="poses.html">Poses</a></li>
+            <li><a href="breathing.html">Breathing</a></li>
+            <li><a href="routine.html" style="color: var(--light-green);">Routine</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="text-resize-btn" class="btn" style="padding: 0.5rem 1rem;">A+</button>
+            <button id="theme-toggle-btn" class="btn" style="padding: 0.5rem 1rem; margin-left: 0.5rem;" title="Toggle Dark Mode">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header hidden">
+        <h1>Daily 15-Minute Routine</h1>
+        <p>A quick, easy-to-follow sequence to start your day with energy and focus.</p>
+        <!-- Print Button -->
+        <button id="print-btn" class="btn" style="margin-top: 1.5rem;">🖨️ Print this Routine</button>
+    </header>
+    
+    <!-- Habit Tracker -->
+    <div class="container tracker-container hidden" style="text-align: center; margin-bottom: 3rem; background: var(--white); padding: 2rem; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); max-width: 800px;">
+        <h2>Daily Habit Tracker</h2>
+        <p style="margin-bottom: 1.5rem; opacity: 0.8;">Build a consistent yoga habit.</p>
+        <h1 style="font-size: 3rem; color: var(--primary-green); margin-bottom: 1rem;">🔥 <span id="streak-count">0</span> Days</h1>
+        <button id="complete-routine-btn" class="btn">I Completed My Routine Today!</button>
+        <p id="tracker-message" style="margin-top: 1rem; font-weight: 600; color: var(--light-green); display: none;">Great job! See you tomorrow.</p>
+    </div>
+
+    <!-- Routine Steps -->
+    <div class="container" style="max-width: 800px;">
+        
+        <!-- Relaxing Audio Player -->
+        <div class="audio-player hidden" style="text-align: center; margin-bottom: 3rem; background: var(--white); padding: 1.5rem; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Play Relaxing Sounds</h3>
+            <audio controls loop style="outline: none;">
+                <!-- Using your downloaded local music file -->
+                <source src="Yoga_Music_2.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="routine-step hidden">
+            <div class="step-time">3 Min</div>
+            <div class="step-content">
+                <h3>1. Mindful Warm-up</h3>
+                <p>Start in a seated position. Gently roll your neck from side to side. Do a few shoulder rolls backward and forward. Finish with deep breaths to center yourself.</p>
+            </div>
+        </div>
+
+        <div class="routine-step hidden">
+            <div class="step-time">7 Min</div>
+            <div class="step-content">
+                <h3>2. Flow & Stretch (Asanas)</h3>
+                <p>Move into <strong>Tadasana (Mountain Pose)</strong> for grounding. Transition to a gentle forward fold. Come to the mat for <strong>Bhujangasana (Cobra Pose)</strong> to open your chest, then push back into <strong>Balasana (Child's Pose)</strong>.</p>
+            </div>
+        </div>
+
+        <div class="routine-step hidden">
+            <div class="step-time">5 Min</div>
+            <div class="step-content">
+                <h3>3. Breath & Relaxation</h3>
+                <p>Sit comfortably and practice Alternate Nostril Breathing (Anulom Vilom) for 3 minutes. Lie on your back in Savasana for the remaining 2 minutes, letting your body completely relax before starting your day.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

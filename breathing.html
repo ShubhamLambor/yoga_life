@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Guide | YogaLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">YogaLife.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="poses.html">Poses</a></li>
+            <li><a href="breathing.html" style="color: var(--light-green);">Breathing</a></li>
+            <li><a href="routine.html">Routine</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="text-resize-btn" class="btn" style="padding: 0.5rem 1rem;">A+</button>
+            <button id="theme-toggle-btn" class="btn" style="padding: 0.5rem 1rem; margin-left: 0.5rem;" title="Toggle Dark Mode">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header hidden">
+        <h1>Pranayama</h1>
+        <p>Control your breath, calm your mind. Follow our interactive guide below.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Relaxing Audio Player -->
+        <div class="audio-player hidden" style="text-align: center; margin: 2rem 0; background: var(--white); padding: 1.5rem; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Play Relaxing Sounds</h3>
+            <audio controls loop style="outline: none;">
+                <!-- Changed to use your local downloaded music -->
+                <source src="Yoga_Music_1.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Breathing Technique Selector -->
+        <div class="hidden" style="text-align: center; margin-top: 2rem;">
+            <label for="breath-select" style="font-weight: 600; color: var(--primary-green);">Choose Technique: </label>
+            <select id="breath-select" style="padding: 0.5rem 1rem; border-radius: 10px; border: 2px solid var(--light-green); font-family: 'Outfit', sans-serif; background: var(--white); cursor: pointer; outline: none;">
+                <option value="breathe-normal">Relax (4s Inhale / 4s Exhale)</option>
+                <option value="breathe-sleep">Sleep (4s Inhale / 6s Exhale)</option>
+                <option value="breathe-focus">Focus Box (Quick Paced)</option>
+            </select>
+        </div>
+        
+        <!-- Interactive Breathing Circle -->
+        <div class="breathe-container hidden">
+            <div class="breathe-circle">
+                Breathe
+            </div>
+            <p style="margin-top: 5rem; opacity: 0.7;">Sync your breath with the circle. Inhale as it grows, exhale as it shrinks.</p>
+        </div>
+
+        <div class="grid" style="margin-top: 4rem;">
+            <div class="card hidden">
+                <div class="card-content">
+                    <span class="tag">Basic</span>
+                    <h3>Deep Belly Breathing</h3>
+                    <p>Place one hand on your stomach. Inhale deeply through your nose, feeling your stomach push out. Exhale slowly through your mouth. Repeat for 2 minutes.</p>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="card-content">
+                    <span class="tag">Calming</span>
+                    <h3>Anulom Vilom (Alternate Nostril)</h3>
+                    <p>Close your right nostril with your thumb and inhale through the left. Close the left nostril, open the right, and exhale. Reverses stress and balances the mind.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

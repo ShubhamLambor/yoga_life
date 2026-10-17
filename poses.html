@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Poses | YogaLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">YogaLife.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="poses.html" style="color: var(--light-green);">Poses</a></li>
+            <li><a href="breathing.html">Breathing</a></li>
+            <li><a href="routine.html">Routine</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="text-resize-btn" class="btn" style="padding: 0.5rem 1rem;">A+</button>
+            <button id="theme-toggle-btn" class="btn" style="padding: 0.5rem 1rem; margin-left: 0.5rem;" title="Toggle Dark Mode">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header hidden">
+        <h1>Explore Asanas</h1>
+        <p>A complete library of 50 step-by-step postures for strength, flexibility, and mindfulness.</p>
+    </header>
+
+    <div class="container">
+        <!-- Filter Buttons -->
+        <div class="filter-container hidden" style="text-align: center; margin-bottom: 3rem;">
+            <button class="filter-btn active" data-filter="all">All Poses (50)</button>
+            <button class="filter-btn" data-filter="general">General Basics (20)</button>
+            <button class="filter-btn" data-filter="kids">Kids & Animals (15)</button>
+            <button class="filter-btn" data-filter="seniors">Seniors Chair Yoga (15)</button>
+        </div>
+
+        <div class="grid">
+            <!-- ========================================== -->
+            <!-- 🟢 20 GENERAL POSES 🟢 -->
+            <!-- ========================================== -->
+            
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Mountain Pose">
+                <div class="card-content">
+                    <span class="tag">Standing</span>
+                    <h3>1. Tadasana (Mountain Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand tall with your feet together and arms at your sides.</li>
+                        <li>Distribute weight evenly across both feet.</li>
+                        <li>Inhale, roll shoulders back, and lift your chest.</li>
+                        <li>Tuck your tailbone slightly and look straight ahead.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves posture and increases body awareness.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?q=80&w=1000" alt="Tree Pose">
+                <div class="card-content">
+                    <span class="tag">Balance</span>
+                    <h3>2. Vrikshasana (Tree Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Shift weight to your left leg.</li>
+                        <li>Place the sole of your right foot on your left inner thigh.</li>
+                        <li>Focus eyes on a single point to keep balance.</li>
+                        <li>Bring hands together at chest. Hold 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves physical balance and strengthens legs.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Downward Dog">
+                <div class="card-content">
+                    <span class="tag">Inversion</span>
+                    <h3>3. Adho Mukha Svanasana (Downward Dog)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Start on hands and knees.</li>
+                        <li>Tuck toes under and lift hips toward the ceiling.</li>
+                        <li>Press chest toward your thighs.</li>
+                        <li>Keep knees slightly bent if needed. Hold 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches hamstrings and strengthens shoulders.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=1000" alt="Cobra Pose">
+                <div class="card-content">
+                    <span class="tag">Backbend</span>
+                    <h3>4. Bhujangasana (Cobra Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie flat on your stomach.</li>
+                        <li>Place hands flat under your shoulders.</li>
+                        <li>Inhale and lift your head and chest off the floor.</li>
+                        <li>Keep elbows tucked in. Hold 3 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Strengthens the spine and opens the chest.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1591343395082-e1200ce41044?q=80&w=1000" alt="Warrior I">
+                <div class="card-content">
+                    <span class="tag">Strength</span>
+                    <h3>5. Virabhadrasana I (Warrior I)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Step right foot forward, left foot back.</li>
+                        <li>Bend right knee over the ankle.</li>
+                        <li>Raise both arms straight up to the ceiling.</li>
+                        <li>Hold for 5 breaths, then switch legs.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Builds stamina and stretches the chest.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Warrior II">
+                <div class="card-content">
+                    <span class="tag">Strength</span>
+                    <h3>6. Virabhadrasana II (Warrior II)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Step feet wide apart.</li>
+                        <li>Turn right foot out 90 degrees, bend the knee.</li>
+                        <li>Stretch arms out parallel to the floor.</li>
+                        <li>Gaze over your right hand. Hold 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Opens the hips and strengthens the core.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Child's Pose">
+                <div class="card-content">
+                    <span class="tag">Resting</span>
+                    <h3>7. Balasana (Child’s Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Kneel on the floor, sit on your heels.</li>
+                        <li>Bend forward and rest your forehead on the mat.</li>
+                        <li>Stretch arms forward or rest them by your sides.</li>
+                        <li>Breathe deeply for 1 minute.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Relieves stress, fatigue, and lower back pain.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Seated Forward Bend">
+                <div class="card-content">
+                    <span class="tag">Flexibility</span>
+                    <h3>8. Paschimottanasana (Seated Forward Bend)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit with both legs extended straight.</li>
+                        <li>Inhale and sit up tall.</li>
+                        <li>Exhale and hinge at hips, reaching for toes.</li>
+                        <li>Hold for 5 to 10 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Calms the brain and stretches hamstrings.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Bridge Pose">
+                <div class="card-content">
+                    <span class="tag">Backbend</span>
+                    <h3>9. Setu Bandhasana (Bridge Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie on your back, knees bent, feet flat.</li>
+                        <li>Press into feet to lift hips toward the ceiling.</li>
+                        <li>Keep thighs parallel and squeeze glutes.</li>
+                        <li>Hold 5 breaths, then slowly roll spine down.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches the chest, neck, and spine.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Triangle Pose">
+                <div class="card-content">
+                    <span class="tag">Standing</span>
+                    <h3>10. Trikonasana (Triangle Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand with feet wide, turn right foot out.</li>
+                        <li>Raise arms parallel to floor.</li>
+                        <li>Reach right hand forward and lower it to your shin.</li>
+                        <li>Stretch left arm straight up. Look up.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Relieves backache and stretches hips.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Plank Pose">
+                <div class="card-content">
+                    <span class="tag">Core</span>
+                    <h3>11. Phalakasana (Plank Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Start in a push-up position.</li>
+                        <li>Keep shoulders directly over your wrists.</li>
+                        <li>Engage your core to keep your body in a straight line.</li>
+                        <li>Hold for 30 seconds while breathing steadily.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Builds intense core and shoulder strength.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=1000" alt="Camel Pose">
+                <div class="card-content">
+                    <span class="tag">Backbend</span>
+                    <h3>12. Ustrasana (Camel Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Kneel on the mat with knees hip-width apart.</li>
+                        <li>Place hands on your lower back for support.</li>
+                        <li>Inhale, lean back slowly, and push hips forward.</li>
+                        <li>If comfortable, reach back to hold your heels.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches the entire front of the body.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Boat Pose">
+                <div class="card-content">
+                    <span class="tag">Core</span>
+                    <h3>13. Navasana (Boat Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit on the floor with knees bent.</li>
+                        <li>Lean back slightly and lift your feet off the floor.</li>
+                        <li>Straighten your legs to form a 'V' shape.</li>
+                        <li>Extend arms parallel to the floor. Hold 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Strengthens the abdomen, hip flexors, and spine.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1591343395082-e1200ce41044?q=80&w=1000" alt="Chair Pose">
+                <div class="card-content">
+                    <span class="tag">Standing</span>
+                    <h3>14. Utkatasana (Chair Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand in Mountain Pose.</li>
+                        <li>Inhale and raise arms above your head.</li>
+                        <li>Exhale and bend knees, as if sitting in a chair.</li>
+                        <li>Keep chest lifted. Hold for 5-8 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Tones the leg muscles and stimulates the heart.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Pigeon Pose">
+                <div class="card-content">
+                    <span class="tag">Flexibility</span>
+                    <h3>15. Kapotasana (Pigeon Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>From downward dog, bring right knee behind right wrist.</li>
+                        <li>Extend left leg straight back on the mat.</li>
+                        <li>Keep hips square to the front.</li>
+                        <li>Slowly fold forward over your right leg.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Extremely deep stretch for the hips and glutes.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?q=80&w=1000" alt="Corpse Pose">
+                <div class="card-content">
+                    <span class="tag">Resting</span>
+                    <h3>16. Savasana (Corpse Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie completely flat on your back.</li>
+                        <li>Let your feet fall open to the sides naturally.</li>
+                        <li>Rest arms by your sides, palms facing up.</li>
+                        <li>Close your eyes and breathe naturally for 5 mins.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Relaxes the whole body and reduces fatigue.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Upward Dog">
+                <div class="card-content">
+                    <span class="tag">Backbend</span>
+                    <h3>17. Urdhva Mukha Svanasana (Upward Dog)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie on stomach, hands near your lower ribs.</li>
+                        <li>Press firmly into hands and tops of your feet.</li>
+                        <li>Lift your thighs and torso off the floor.</li>
+                        <li>Keep shoulders away from ears.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves posture and stretches the abdomen.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Half Lord of the Fishes">
+                <div class="card-content">
+                    <span class="tag">Twist</span>
+                    <h3>18. Ardha Matsyendrasana</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit on the floor, cross right foot over left knee.</li>
+                        <li>Keep left leg straight or bent under you.</li>
+                        <li>Twist torso to the right, hooking left elbow on right knee.</li>
+                        <li>Look over your right shoulder. Hold 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Energizes the spine and aids digestion.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Bow Pose">
+                <div class="card-content">
+                    <span class="tag">Backbend</span>
+                    <h3>19. Dhanurasana (Bow Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie on your stomach.</li>
+                        <li>Bend knees and reach back to grab your ankles.</li>
+                        <li>Inhale and lift your chest and thighs off the floor.</li>
+                        <li>Look forward and hold for 3-5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches the entire front body and ankles.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="general">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Half Moon Pose">
+                <div class="card-content">
+                    <span class="tag">Balance</span>
+                    <h3>20. Ardha Chandrasana (Half Moon)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>From Triangle pose, bend right knee slightly.</li>
+                        <li>Place right fingertips on the floor in front of you.</li>
+                        <li>Lift left leg parallel to the floor.</li>
+                        <li>Extend left arm up. Hold for 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Enhances coordination and leg strength.</p>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 🟠 15 KIDS POSES 🟠 -->
+            <!-- ========================================== -->
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Butterfly Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>21. Titli Asana (Butterfly Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit on the floor with a straight back.</li>
+                        <li>Bring the soles of your feet together.</li>
+                        <li>Hold feet firmly and gently flap knees up and down.</li>
+                        <li>Keep flapping like a butterfly for 30 seconds.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Fun way to stretch the inner thighs.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Happy Baby">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>22. Ananda Balasana (Happy Baby)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie flat on your back on a soft mat.</li>
+                        <li>Bring knees toward your chest.</li>
+                        <li>Grab the outside edges of your feet.</li>
+                        <li>Gently rock side to side like a happy baby!</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Highly relaxing and stretches lower back.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=1000" alt="Cat Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>23. Marjaryasana (Cat Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Get on your hands and knees.</li>
+                        <li>Arch your back high towards the ceiling.</li>
+                        <li>Look at your belly button like a scared cat.</li>
+                        <li>Meow softly as you exhale.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Makes the spine flexible and allows imagination.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Cow Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>24. Bitilasana (Cow Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>From Cat pose, drop your belly toward the floor.</li>
+                        <li>Lift your head and chest up to the sky.</li>
+                        <li>Smile and say "Moooo!" as you breathe out.</li>
+                        <li>Alternate between Cat and Cow 5 times.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Warms up the spine and stretches the belly.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1591343395082-e1200ce41044?q=80&w=1000" alt="Lion Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>25. Simhasana (Lion Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit back on your heels.</li>
+                        <li>Spread fingers wide on your knees like claws.</li>
+                        <li>Inhale deeply through your nose.</li>
+                        <li>Exhale, stick tongue out, and roar "Haaa!"</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Relieves tension in the face and throat.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Airplane Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>26. Dekasana (Airplane Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand tall with arms out like wings.</li>
+                        <li>Slowly lift one leg straight behind you.</li>
+                        <li>Lean chest forward to balance on one leg.</li>
+                        <li>Pretend to fly for 10 seconds, then switch.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves focus, balance, and core strength.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Frog Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>27. Mandukasana (Frog Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Squat down with feet apart.</li>
+                        <li>Place hands flat on the floor between feet.</li>
+                        <li>Look straight ahead like a frog.</li>
+                        <li>Jump up in the air and land softly! Repeat 5 times.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Burns off excess energy and builds leg strength.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Snake Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>28. Snake Pose (Cobra Variation)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Lie on your tummy with legs zipped together.</li>
+                        <li>Put hands under shoulders.</li>
+                        <li>Lift chest up and hiss like a snake "Ssss!"</li>
+                        <li>Slowly slither back down.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Keeps the spine healthy and flexible.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?q=80&w=1000" alt="Tree Pose Kids">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>29. Flamingo Pose (Tree Variation)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand on one leg like a pink flamingo.</li>
+                        <li>Bend the other knee up.</li>
+                        <li>Flap your arms gently like wings to keep balance.</li>
+                        <li>Hold for 5 seconds without falling over!</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Teaches patience and standing balance.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=1000" alt="Star Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>30. Star Pose</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Jump your feet wide apart.</li>
+                        <li>Stretch arms out wide to the sides.</li>
+                        <li>Spread fingers wide.</li>
+                        <li>Twinkle your fingers like a shining star!</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Opens the chest and brings joyful energy.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Crescent Moon">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>31. Crescent Moon Pose</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand tall with hands reaching up to the sky.</li>
+                        <li>Clasp your hands together.</li>
+                        <li>Lean your body sideways to look like a banana or moon.</li>
+                        <li>Hold, then lean to the other side.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches the sides of the tummy.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1591343395082-e1200ce41044?q=80&w=1000" alt="Turtle Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>32. Kurmasana (Turtle Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit with legs in a wide diamond shape.</li>
+                        <li>Slide hands under your knees.</li>
+                        <li>Round your back like a turtle hiding in its shell.</li>
+                        <li>Rest quietly for 5 breaths.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Promotes quiet time and introspection.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Gorilla Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>33. Padahastasana (Gorilla Pose)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Stand with feet apart.</li>
+                        <li>Bend forward and let arms dangle like a gorilla.</li>
+                        <li>Sway gently from side to side.</li>
+                        <li>Roll up slowly.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Relieves tension in the neck and shoulders.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Mouse Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>34. Mouse Pose (Child's Pose Var.)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Kneel and curl up into a tiny ball.</li>
+                        <li>Rest your head on the floor.</li>
+                        <li>Keep arms by your sides like a sleeping mouse.</li>
+                        <li>Breathe very softly.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Excellent for cooling down before bedtime.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="kids">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Candle Pose">
+                <div class="card-content">
+                    <span class="tag">Kids Favorite</span>
+                    <h3>35. Candle Pose</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Kneel tall with your back straight.</li>
+                        <li>Bring hands together at your chest like a candle flame.</li>
+                        <li>Take a deep breath in.</li>
+                        <li>Blow the candle out with a long exhale!</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Teaches deep breathing in a fun, visual way.</p>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 🔵 15 SENIORS POSES (CHAIR YOGA) 🔵 -->
+            <!-- ========================================== -->
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Chair Stretch">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>36. Seated Spinal Twist</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit sideways on a chair, feet flat on the floor.</li>
+                        <li>Inhale deeply and lengthen your spine.</li>
+                        <li>Exhale and gently twist toward the back of the chair.</li>
+                        <li>Hold for 3-5 breaths, return, and switch sides.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves spinal mobility and digestion safely.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Seated Breathing">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>37. Seated Mountain (Tadasana)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit at the edge of your chair, feet planted.</li>
+                        <li>Sit up perfectly straight, engage your core.</li>
+                        <li>Roll shoulders back and rest hands on knees.</li>
+                        <li>Breathe deeply for 1 minute.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Corrects slouching and strengthens core muscles.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?q=80&w=1000" alt="Neck Rolls">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>38. Neck & Shoulder Rolls</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit comfortably. Roll shoulders up, back, and down 3 times.</li>
+                        <li>Gently drop your right ear toward your right shoulder.</li>
+                        <li>Roll chin to chest, then left ear to left shoulder.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Instantly relieves stiffness in the upper body.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Seated Cat Cow">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>39. Seated Cat-Cow</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit with hands firmly on your knees.</li>
+                        <li>Inhale, arch your back, and look up (Cow).</li>
+                        <li>Exhale, round your spine, tuck your chin (Cat).</li>
+                        <li>Repeat this smooth motion 5 times.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Gently massages the spine and relieves stiffness.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Seated Side Stretch">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>40. Seated Side Stretch</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Hold the edge of the chair with your right hand.</li>
+                        <li>Inhale and reach left arm straight up.</li>
+                        <li>Exhale and gently lean body to the right.</li>
+                        <li>Hold 3 breaths, then switch sides.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Improves lung capacity and stretches the torso.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Supported Forward Fold">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>41. Supported Forward Fold</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit with feet wider than your hips.</li>
+                        <li>Exhale and slowly fold forward from hips.</li>
+                        <li>Let hands slide down legs and head hang loose.</li>
+                        <li>Place hands on knees to push back up slowly.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Safe way to decompress the spine and relax.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=1000" alt="Seated Knee to Chest">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>42. Seated Knee-to-Chest</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit up straight. Interlace fingers around right shin.</li>
+                        <li>Gently pull right knee toward your chest.</li>
+                        <li>Keep shoulders relaxed and back straight.</li>
+                        <li>Hold for 3 breaths, release, and switch legs.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Stretches the glutes and lower back gently.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1591343395082-e1200ce41044?q=80&w=1000" alt="Seated Pigeon">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>43. Seated Pigeon Pose</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit tall. Place right ankle over left knee.</li>
+                        <li>Keep right foot flexed to protect the knee.</li>
+                        <li>Lean forward slightly from the hips for a deeper stretch.</li>
+                        <li>Hold 5 breaths and switch legs.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Excellent for relieving sciatica and hip pain.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Seated Eagle Arms">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>44. Seated Eagle Arms</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Cross right arm under left arm at the elbows.</li>
+                        <li>Bend elbows and bring palms to touch (or hold shoulders).</li>
+                        <li>Lift elbows slightly and drop shoulders down.</li>
+                        <li>Breathe into the space between shoulder blades.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Deeply stretches the upper back and shoulders.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?q=80&w=1000" alt="Ankle Rotations">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>45. Ankle Rotations</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Extend right leg out straight in front of you.</li>
+                        <li>Slowly roll the ankle in a circle 5 times clockwise.</li>
+                        <li>Roll 5 times counter-clockwise.</li>
+                        <li>Point toes, then flex foot. Switch legs.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Promotes blood circulation in the lower legs.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?q=80&w=1000" alt="Wrist Stretches">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>46. Wrist & Finger Stretches</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Extend arms in front. Make tight fists, then open wide.</li>
+                        <li>Repeat 5 times to warm up fingers.</li>
+                        <li>Point fingers down, use opposite hand to gently press.</li>
+                        <li>Switch hands and repeat.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Helps relieve stiffness from arthritis.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000" alt="Seated Crescent Moon">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>47. Seated Crescent Moon</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Inhale and reach both arms up overhead.</li>
+                        <li>Clasp hands, keeping index fingers pointing up.</li>
+                        <li>Exhale and lean to the right. Hold 3 breaths.</li>
+                        <li>Return to center and lean left.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Opens the chest and improves posture.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" alt="Seated Forward Bend">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>48. Seated Forward Bend (Single Leg)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Extend right leg forward, heel on floor, toes pointing up.</li>
+                        <li>Keep left foot flat on floor.</li>
+                        <li>Inhale tall, exhale and hinge forward over right leg.</li>
+                        <li>Hold 3-5 breaths, switch legs.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Safely stretches the hamstrings without falling risk.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000" alt="Chair Warrior I">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>49. Chair Warrior I</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit sideways on chair facing right.</li>
+                        <li>Keep right leg bent on chair. Extend left leg straight back.</li>
+                        <li>Face forward, inhale, raise arms up.</li>
+                        <li>Hold 3-5 breaths, turn around for left side.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Builds leg stamina while fully supported.</p>
+                </div>
+            </div>
+
+            <div class="card hidden" data-category="seniors">
+                <img src="https://images.unsplash.com/photo-1573590917326-11b2723049b1?q=80&w=1000" alt="Chair Warrior II">
+                <div class="card-content">
+                    <span class="tag">Chair Yoga</span>
+                    <h3>50. Chair Warrior II</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Step-by-Step Guide:</strong></p>
+                    <ol style="margin-left: 20px; margin-bottom: 1rem; font-size: 0.95rem; color: #555;">
+                        <li>Sit sideways facing right, right knee over ankle.</li>
+                        <li>Extend left leg back, foot flat.</li>
+                        <li>Open chest to the front. Extend arms parallel to floor.</li>
+                        <li>Look over right fingers. Hold 5 breaths, switch sides.</li>
+                    </ol>
+                    <p><strong>Benefits:</strong> Safely opens the hips and chest for older adults.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
