@@ -378,3 +378,77 @@ nav {
     transform: none !important;
   }
 }
+
+/* ------------------------------------------------- */
+/* Mobile Responsiveness (Tablets & Phones)          */
+/* ------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  /* Stack Navigation */
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-actions {
+    margin-top: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Adjust Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Adjust Page Headers */
+  .page-header {
+    padding: 3rem 5% 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Stack About Sections */
+  .about-section, 
+  .about-section:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  /* Stack Routine Steps */
+  .routine-step {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Adjust Filter Buttons to wrap nicely */
+  .filter-btn {
+    margin: 0.3rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
